@@ -1,0 +1,30 @@
+<html> 
+
+<head> 
+	<script type = "text/javascript"
+		src = "{{ url_for('static', filename = 'index.js') }}" ></script> 
+</head> 
+	
+<body> 
+	<h1>RobinGood - Alpaca API Endpoint</h1>
+    <p>This is RobinGood's endpoint to Alpaca API, subsections below describe how to access functionalities.  All return values are in JSON notation.</p>
+    <p>Currently a user's key and secret key must be used.</p>
+    <h3>Placing an order</h3>
+    <p>There exists five types of orders: market orders, limit orders, stop orders, stop limit orders, and trailing stop orders.</p>
+    <ul>
+        <li><p>Place a market order by accessing: https://robingood.alpaca.endpoint/market/symbol/qty/side/time_in_force</p></li>
+        <li><p>Place a limit order by accessing: https://robingood.alpaca.endpoint/market/symbol/qty/side/time_in_force/limit_price</p></li>
+        <li><p>Place a stop order by accessing: https://robingood.alpaca.endpoint/market/symbol/qty/side/time_in_force/stop_price</p></li>
+        <li><p>Place a stop limit order by accessing: https://robingood.alpaca.endpoint/market/symbol/qty/side/time_in_force/limit_price/stop_price</p></li>
+        <li><p>Place a trailing stop order by accessing: https://robingood.alpaca.endpoint/market/symbol/qty/side/time_in_force/trail_percentage</p></li>
+    </ul>
+    <h3>Account details</h3>
+    <ul>
+        <li><p>View account equity by accessing: https://robingood.alpaca.endpoint/equity</p></li>
+        <li><p>View account buying power by accessing: https://robingood.alpaca.endpoint/buying_power</p></li>
+        <li><p>View account orders by accessing: https://robingood.alpaca.endpoint/orders</p></li>
+        <li><p>View account positions by accessing: https://robingood.alpaca.endpoint/positions</p></li>
+    </ul>
+</body> 
+	
+</html> 
