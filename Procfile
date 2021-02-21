@@ -1,1 +1,1 @@
-web: gunicorn main.pi:app
+web: gunicorn main.py:app
